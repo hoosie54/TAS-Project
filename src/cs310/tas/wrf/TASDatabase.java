@@ -28,10 +28,9 @@ public class TASDatabase {
     int resultCount, columnCount, updateCount = 0;
     
     
-    public void TASDatabase()   {
+    public TASDatabase()   {
         
-        
-        
+
         try {
 
             System.out.println("Connecting to " + server + "...");
@@ -82,8 +81,9 @@ public class TASDatabase {
     
     public void getBadge(String badgeID) {
         
-        try {
         
+        try {
+            
             /* Prepare Select Query */
                 
             query = "SELECT id,description FROM badge WHERE id = "+ badgeID;
@@ -388,5 +388,7 @@ public class TASDatabase {
         }
         
     }
+    
+
     
 }    

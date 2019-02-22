@@ -7,7 +7,7 @@ package cs310.tas.wrf;
 
 /**
  *
- * @author panth
+ * @author Marcus Shell
  */
 public class Test {
 
@@ -16,6 +16,9 @@ public class Test {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Debug A");
+        TASDatabase db = new TASDatabase();
+        db.getBadge("abc");
     }
     
 }
